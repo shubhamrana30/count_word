@@ -1,0 +1,1 @@
+Avl tree is implemented here.Avl tree is self balancing BST.We can also use Red Black Tree.
