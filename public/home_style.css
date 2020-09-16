@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+}
+
+
+body {
+    background: rgb(9,121,23);
+    background: linear-gradient(90deg, rgba(9,121,23,1) 0%, rgba(255,187,0,1) 100%, rgba(36,18,0,1) 100%);
+
+    margin: 0;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    text-align:center;
+
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+
+
+.topnav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+    font-weight: 800;
+    justify-content: space-evenly;
+}
+
+.topnav > a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+
+
+.donate__a {
+    background-color: orange; /* Green */
+    border: none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.donate__list{
+    color: black;
+}
+
+.covid__p {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.covid__image {
+    width: 50%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0 , 1), rgba(0,0,0,0));
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    background: rgb(9,121,23);
+    background: linear-gradient(90deg, rgba(9,121,23,1) 0%, rgba(255,187,0,1) 100%, rgba(36,18,0,1) 100%);
+    
+}
+
+
+.login {
+    display: block;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.login__logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.login__container {
+    background-color: #131921;
+    width: 300px;
+    height: fit-content;
+   
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.login__container > form > h5 {
+    margin-bottom: 5px;
+}
+
+.login__container > form > input {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%
+}
+
+.login__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+
+
+.signin__button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29; 
+}
+
+.donate__button {
+    background: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;     
+}
+
+
+
+.donate__container {
+    background-color: #131921;
+    width: 300px;
+    height: fit-content;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.donate__container >  h5 {
+    margin-bottom: 20px;
+
+}
+
+.donate__container >  input {
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.donate__container > p {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+
+.about__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.about {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 10px;
+        padding: 20px;
+        width: 100%;
+        max-height: 400px;
+        min-width: 100px;
+        z-index: 1;
+    
+    
+}
+
+
+.about > img {
+    max-height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+
+
+.about > button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
