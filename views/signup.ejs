@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="home_style.css">
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a class="left" href="/">HOME</a>
+        </div>
+
+        <div class="login">
+            <div>
+                <img class="login__logo" src="https://www.yorkgraphicdesigners.co.uk/wp-content/uploads/2020/04/coronavirus_logo-2-833x321.jpg" />
+            </div>
+            <div class="login__container">
+                <form method="POST" action="/signupchk">
+                    
+                        <h5>Username</h5>
+                        <input  type="text" name="username" required/>
+                    
+                    
+                        <h5>Password</h5>
+                        <input type="password" name="password" required/>
+                    
+                
+                        <button class="signin__button">Register</button>
+                    
+                    <small><%= invalid %> </small>
+
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <p>This website is just to represent the ways to copeup with this pandemic in the modern era.
+                Kindly be aware of any fake donations website.
+            </p>
+        </div>
+    </body>
+</html>

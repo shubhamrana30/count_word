@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link href="home_style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="topnav">
+            <a  href="#">HOME</a>
+            <a  href="about">ABOUT</a>
+            <a  href="signin">SIGN IN</a>
+            <a  href="/signup">SIGN UP</a>
+        </div>
+        <h1 style="color: white; padding-top: 10px; padding-bottom: 10px; font-size: 50px;">Top Donaters</h1>
+        <div class="hello1" style="border: 1px solid black;">
+            
+            <div class="donate__list" class="hello2"  >
+                <table style="border-collapse: separate;margin:auto; border-spacing: 25px;">
+                    <tr>
+                        <td><h1 style="color: white">NAME </h1></td>
+                        <td><h1 style="color: white">AMOUNT(inr) </h1></td>
+                    </tr>
+                    <% donaters.forEach(element=>{ %>
+                        <tr>
+                            <td><h1><%= element.name %> </h1></td>
+                            <td><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= element.amount %> </h1></td>
+                        </tr>
+                    <% }) %> 
+                </table>
+            </div>
+        
+    </div>
+        <div>
+            <a href="/signin" class="donate__a" style="margin-top: 10px;">SIGN IN TO DONATE</a>
+        </div>
+        <br>
+        <br>
+        
+
+    <div>
+        <p class="covid__p">
+            Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+            Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+        </p>
+    </div>
+    <br>
+    <br>
+        
+<div>
+        <img src="https://unit42.paloaltonetworks.com/wp-content/uploads/2020/04/Covid-19-Consumer.png" class="covid__image" />
+    </div>
+        <div class="footer">
+            <p>
+                <b>
+                    This website is just to represent the ways to copeup with this pandemic in the modern era.
+                    Kindly be aware of any fake donations website.
+                </b>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripepublickey="<%= stripepublickey %>"
+        </script>
+
+        <link rel="stylesheet" href="home_style.css">
+        
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="left" href="/">HOME</a>
+        </div>
+
+
+        
+        <div class="donate__container" style="margin-top: 25px;margin-bottom: 25px;">
+            
+
+                <h5>Name</h5>
+                <input type="text" class="data"   required/>
+            
+
+                <h5>Address(Line 1)</h5>
+                <input type="text" class="data"    required/>
+            
+                <h5>Postal Code</h5>
+                <input type="text" class="data"   required/>
+
+                <h5>City</h5>
+                <input type="text" class="data"  required/>
+            
+                <h5>State</h5>
+                <input type="text" class="data"   required/>
+                <h5>Country</h5>
+                <input type="text" class="data"   required/>
+                <h5>Amount</h5>
+                <input type="number" class="data"  required/>
+            
+            <button onclick="donate_clicked()" class="donate__button">
+                Donate
+            </button>
+        </div>
+
+
+
+
+
+        <div><p ><h3 style="color: red;">this site is under development . NO actual payment will happen. Use <b>424242424242</b> card no to check wheater payment gatway is working or not use any email id, any
+        <b>cvc(123)</b> no.
+    </h3></p></div>
+        <div><b>THANK YOU</b>
+        
+        <script src="donate.js" defer></script>
+
+
+
+        <div class="footer">
+            <p>This website is just to represent the ways to copeup with this pandemic in the modern era.
+                Kindly be aware of any fake donations website.
+            </p>
+        </div>
+    </body>
+</html>
